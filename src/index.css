@@ -1,0 +1,160 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-sand: #F5F1E8;
+    --text-forest: #1C2B24;
+    --brand-forest: #2F5D50;
+    --brand-forest-hover: #24493e;
+    --brand-forest-light: #E7EFEA;
+    --accent-terracotta: #C97B4A;
+    --accent-terracotta-hover: #b36b3b;
+    --accent-terracotta-light: #FBEFE7;
+    --surface-card: #FFFFFF;
+    --border-sand: #E2DBD0;
+  }
+
+  body {
+    background-color: var(--bg-sand);
+    color: var(--text-forest);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+  }
+}
+
+/* Custom utility classes matching Forest & Sand design rules */
+.bg-sand {
+  background-color: #F5F1E8;
+}
+
+.bg-sand-light {
+  background-color: #FAF8F3;
+}
+
+.bg-forest {
+  background-color: #2F5D50;
+}
+
+.bg-forest:hover {
+  background-color: #24493e;
+}
+
+.text-forest {
+  color: #1C2B24;
+}
+
+.text-forest-muted {
+  color: #4C6055;
+}
+
+.border-sand {
+  border-color: #E2DBD0;
+}
+
+.bg-terracotta {
+  background-color: #C97B4A;
+}
+
+.bg-terracotta:hover {
+  background-color: #b36b3b;
+}
+
+.text-terracotta {
+  color: #C97B4A;
+}
+
+.badge-terracotta {
+  background-color: #FBEFE7;
+  color: #C97B4A;
+  border: 1px solid #F3DAC8;
+}
+
+.badge-forest {
+  background-color: #E7EFEA;
+  color: #2F5D50;
+  border: 1px solid #CFE2D7;
+}
+
+/* Card radius standard 12px, inputs/buttons standard 8px */
+.card-shell {
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  border: 1px solid #E2DBD0;
+  box-shadow: 0 4px 16px -2px rgba(28, 43, 36, 0.05);
+}
+
+.btn-primary {
+  background-color: #2F5D50;
+  color: #FFFFFF;
+  border-radius: 8px;
+  padding: 0.625rem 1.25rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: #24493e;
+  box-shadow: 0 2px 8px rgba(47, 93, 80, 0.25);
+}
+
+.btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background-color: #F5F1E8;
+  color: #1C2B24;
+  border: 1px solid #D9CFBE;
+  border-radius: 8px;
+  padding: 0.625rem 1.25rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background-color: #ECE5D8;
+}
+
+.btn-accent {
+  background-color: #C97B4A;
+  color: #FFFFFF;
+  border-radius: 8px;
+  padding: 0.625rem 1.25rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn-accent:hover:not(:disabled) {
+  background-color: #b36b3b;
+}
+
+.input-field {
+  border-radius: 8px;
+  border: 1px solid #D9CFBE;
+  background-color: #FFFFFF;
+  color: #1C2B24;
+  padding: 0.625rem 0.875rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #2F5D50;
+  box-shadow: 0 0 0 3px rgba(47, 93, 80, 0.15);
+}
